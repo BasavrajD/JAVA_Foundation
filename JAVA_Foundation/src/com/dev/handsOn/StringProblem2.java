@@ -32,8 +32,8 @@ public class StringProblem2 {
 			System.out.println("Invalid email");
 		}
 		
-		//having some problems with this
-		if(password.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\\\S+$).{8,}$")) {
+		//having some problems with this---> now fixed, the regex was giving problem, still idk what this regex means.
+		if(password.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$")) {
 			System.out.println("Valid password");
 		}else {
 			System.out.println("Invalid password");
